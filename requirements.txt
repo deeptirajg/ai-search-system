@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+langchain
+openai
+faiss-cpu
+pydantic
+numpy
+pandas
+requests
+scikit-learn
+tiktoken
