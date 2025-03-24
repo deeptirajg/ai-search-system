@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-search-system
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ai-search
+  template:
+    metadata:
+      labels:
+        app: ai-search
+    spec:
+      containers:
+        - name: ai-search
+          image: YOUR_DOCKER_IMAGE
+          ports:
+            - containerPort: 8000
